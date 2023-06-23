@@ -1,0 +1,38 @@
+
+.file{
+    height: 220px;
+    width: 600px;
+    border: 1px solid pink;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09-tfVHyNVqVBr4MyZmHsXKlQZ-AQzIuN9Q&usqp=CAU") no-repeat;
+    background-position: center;
+    // background-size: cover;
+    
+}
+.col-md-4{
+    margin-right: 2px;
+}
+.form-label{
+    display: flex;
+    text-align: start;
+}
+.width{
+    width: 430px;
+    
+}
+.form-select{
+width:300px;
+}
+.Brand{
+    width:300px;
+    display:flex;
+}
+.changeposition{
+    display: flex;
+    text-align: start;
+}
+.Feactured{
+    width: auto;
+}
+.gender{
+    width:110px;
+}

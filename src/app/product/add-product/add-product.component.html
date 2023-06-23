@@ -1,1 +1,140 @@
-<p>add-product works!</p>
+<form>
+    <div class="row container border">
+      <div class="col-md-8">
+        <div>
+          <label class="changeposition">Product Name</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="productclass">
+          <label class="changeposition">Description</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <mat-form-field appearance="fill">
+              <mat-label>Category</mat-label>
+              <mat-select>
+                <mat-option value="Babyshampo">Babyshampo</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <mat-form-field appearance="fill">
+              <mat-label>Brand</mat-label>
+              <input matInput placeholder="Placeholder" type="text">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <mat-form-field appearance="fill">
+              <mat-label>Status</mat-label>
+              <mat-select>
+                <mat-option value="Babyshampo">Sale</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <mat-form-field appearance="fill">
+              <mat-label>Size</mat-label>
+              <input matInput placeholder="Placeholder" type="text">
+  
+  
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <mat-form-field appearance="fill">
+              <mat-label>Color</mat-label>
+              <input matInput placeholder="Placeholder" type="text">
+            </mat-form-field>
+  
+          </div>
+          <div class="col-md-4">
+            <mat-form-field appearance="fill">
+              <mat-label>Tags</mat-label>
+              <input matInput placeholder="Placeholder" type="text">
+            </mat-form-field>
+          </div>
+        </div>
+  
+  
+      </div>
+      <div class="col border ">
+        <div class="col-md-4 ">
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Product Code</mat-label>
+            <input matInput placeholder="Placeholder" type="text">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Product Sku</mat-label>
+            <input matInput placeholder="Placeholder" type="text">
+          </mat-form-field>
+          <label>Gender:</label>
+          <div class="gender ">
+            
+              <input type="radio" name="gender" id="id56">
+              <label class="form-check-label" for="id56">
+                Men
+              </label>
+            
+  
+            
+              <input type="radio" name="gender" id="id34" >
+              <label class="form-check-label" for="id34">
+                Women
+              </label>
+            
+            
+              <input type="radio" name="gender" id="id009">
+              <label class="form-check-label" for="id009">
+                Kids
+              </label>
+           
+            
+              <input type="radio" name="gender" id="id98">
+              <label class="form-check-label" for="id98">
+                others
+              </label>
+            
+          </div>
+          <mat-form-field appearance="fill" class="mt-2">
+            <mat-label>Quantity</mat-label>
+            <input matInput placeholder="Placeholder" type="text">
+          </mat-form-field>
+  
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-8">
+          <p> <label class="changeposition">Product Image</label></p>
+          <input type="file" class="file">
+        </div>
+        <div class="col">
+          <div class="col-md-4  mt-5 Feactured">
+            <mat-form-field appearance="fill">
+              <mat-label>Regular price</mat-label>
+              <input matInput placeholder="$0.00" type="text">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Sale price</mat-label>
+              <input matInput placeholder="$0.00" type="text">
+            </mat-form-field>
+            <mat-slide-toggle>Feactured product</mat-slide-toggle>
+            <button mat-flat-button color="accent">Create product</button>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+  
+    </div>
+  
+  
+  
+  
+  </form>
