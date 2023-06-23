@@ -1,0 +1,75 @@
+.demo-table {
+    width: 80%;
+  }
+  
+  .demo-button-container {
+    padding-bottom: 16px;
+  }
+  
+  .demo-button + .demo-button {
+    margin-left: 8px;
+  }
+.dashboardname{
+    border: 1px solid pink;
+}
+.container1{
+ display: inline-block;
+  left: 500px;
+  bottom: 46px;
+ 
+  height: 20px;
+}
+.mat-elevation-z8{
+  margin: 20px;
+  position: relative;
+  bottom: 50px;
+}
+#head{
+  background: rgb(206, 124, 124);
+  color: white;
+}
+
+  .Sub-Categary{
+    position: relative;
+    bottom: 11px;
+    right: 430px;
+    color: rgb(179, 63, 82);
+  }
+  .DashBoard{
+    position: relative;
+    top: 12px;
+    right: 290px;
+    font-weight: 550;
+    color: rgb(179, 63, 82) ;
+  }
+  .btn-primary{
+    background: none;
+    border: 1px solid pink;
+    color: rgb(179, 63, 82);
+    font-weight: 500;
+    position: relative;
+    left: 550px;
+    bottom: 53px;
+  }
+
+.table{
+  width: 97%;
+}
+  // .container1{
+  //   position: absolute;
+  // }
+  .btn-pink{
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   border: 1px solid pink;
+  padding: 10px;
+  }
+
+  @media only screen and (min-width: 400px) {
+    
+  }
+
+  .background{
+    background: rgb(243, 241, 241);
+  }
