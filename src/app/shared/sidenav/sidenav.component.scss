@@ -1,0 +1,26 @@
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 250px;
+}
+.app-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonColor{
+    background:#fddde3;
+    border-right:4px solid #ff4081;
+}
+
+button{
+    width: 220px;
+    padding: 24px;
+    font-weight: bold;
+    margin-right: 0px;
+    text-align: center;
+}
