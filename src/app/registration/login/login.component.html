@@ -1,0 +1,20 @@
+<div>
+    <form [formGroup]="loginForm" class="formStructure">
+        <div>
+            <h1>Login</h1>
+        </div>
+        <mat-form-field class="formField">
+            <mat-label>Enter the Email</mat-label>
+            <input type="text" matInput formControlName="username">
+        </mat-form-field>
+
+        <mat-form-field class="formField">
+            <mat-label>Enter Password</mat-label>
+            <input type="text" matInput formControlName="password">
+        </mat-form-field>
+        <div>
+            <button mat-raised-button color="primary" class="buttonClass" (click)="onLogin()">Login</button>
+            <button mat-raised-button color="primary" class="buttonClass" routerLink="/register">Create Account</button>
+          </div>
+    </form>
+</div>
