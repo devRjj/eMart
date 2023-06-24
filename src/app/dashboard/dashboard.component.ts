@@ -56,6 +56,30 @@ export class DashboardComponent {
       ]
     }]
   };
+
+
+  salesSummaryData = [
+    {
+      text: 'Product A',
+      dynamicData: '100 units sold',
+      image: 'https://picsum.photos/200'
+    },
+    {
+      text: 'Product B',
+      dynamicData: '75 units sold',
+      image: 'https://picsum.photos/200/300?grayscale'
+    },
+    {
+      text: 'Product C',
+      dynamicData: '50 units sold',
+      image: 'https://example.com/product-c-image.jpg'
+    },
+    {
+      text: 'Product D',
+      dynamicData: '125 units sold',
+      image: 'https://example.com/product-d-image.jpg'
+    }
+  ];
   
 
 }
