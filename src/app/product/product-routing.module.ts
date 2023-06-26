@@ -6,7 +6,9 @@ import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [{ path: '', component: ProductComponent },
 {path:'product-list',component:ProductListComponent},
-{path:'add-product',component:AddProductComponent}];
+{path:'add-product',component:AddProductComponent},
+{path:'add-product/:id',component:AddProductComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

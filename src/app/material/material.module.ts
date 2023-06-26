@@ -15,8 +15,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTableModule} from '@angular/material/table';
 import {MatGridListModule} from '@angular/material/grid-list'
+import {MatDialogModule} from '@angular/material/dialog';
 
 const MaterialComponents= [
+  MatDialogModule,
   MatButtonModule,
   MatSidenavModule,
   MatIconModule,

@@ -13,13 +13,13 @@
                         <button routerLink="/categories/main" mat-button><mat-icon>main</mat-icon>Main</button>
                     </mat-list-item>
                     <mat-list-item routerLinkActive="buttonColor">
-                        <button routerLink="/categories/sub" mat-button><mat-icon>sub</mat-icon>Sub</button>
+                        <button routerLink="/product/product-list" mat-button><mat-icon>sub</mat-icon>Sub</button>
                     </mat-list-item>
                 </mat-nav-list>
             </mat-expansion-panel>
 
             <mat-list-item routerLinkActive="buttonColor">
-                <button routerLink="/product" mat-button><mat-icon>store</mat-icon>Product</button>
+                <button routerLink="/product/product-list" mat-button><mat-icon>store</mat-icon>Product</button>
             </mat-list-item>
             <mat-list-item routerLinkActive="buttonColor">
                 <button mat-button><mat-icon>shopping_cart</mat-icon>Orders</button>
@@ -44,7 +44,7 @@
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-        <div style="text-align: center; min-height: 600px;">
+        <div >
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>
