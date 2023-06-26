@@ -15,25 +15,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f7cef1;
+    // background-color: #f7cef1;
     padding: 8px;
     height: 100px;
     /* Update the row height to 100 pixels */
     overflow: hidden;
 }
 
-.left-side {
-    flex-grow: 1;
-}
+// .left-side {
+//     flex-grow: 1;
+// }
 
-.right-side {
-    display: flex;
-    align-items: center;
-}
+// .right-side {
+//     display: flex;
+//     align-items: center;
+// }
 
 .sales-image {
     height: 80%;
     margin-left: 8px;
     border-radius: 50%;
     color: pink
+}
+
+.material-icons{
+    font-size: 87px;
+    margin-left: 0px;
+}
+
+.mat-icon {
+   
+    height: 87px;
+    width: 87px;
+    overflow: hidden;
+    color: hotpink;
+    // background-color: lightpink;
+    margin-top: 5px;
+    margin-left: 60px;
 }

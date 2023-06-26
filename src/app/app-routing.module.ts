@@ -18,6 +18,7 @@ const routes: Routes =[
   canLoad: [SharedModuleGuard],
   loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule) },
   {path: '', redirectTo:'/login', pathMatch: 'full'},
+  { path: 'newsletter', loadChildren: () => import('./newsletter/newsletter.module').then(m => m.NewsletterModule) },
   {path: '**', redirectTo:'/login', pathMatch: 'full'}
 ];
 

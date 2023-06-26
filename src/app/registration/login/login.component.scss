@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px #a5819e;
 }
 
 .formField {
@@ -16,4 +17,17 @@
     width: 500px; 
     height: 40px; 
     margin-top: 10px;
+}
+
+.formStructure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 500px;
+    margin: auto;
+    background-color: #ffdfe5;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
 }

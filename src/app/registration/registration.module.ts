@@ -6,6 +6,7 @@ import { RegistrationComponent } from './registration.component';
 import { LoginComponent } from './login/login.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -17,7 +18,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     RegistrationRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut: 4000
+    })
   ],
   exports:[
     LoginComponent
