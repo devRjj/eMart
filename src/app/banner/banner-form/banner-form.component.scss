@@ -1,0 +1,42 @@
+.row{
+    display: flexbox;
+    align-items: flex-start;
+    text-align: start;
+ }
+ .file{
+     height: 220px;
+     width: 420px;
+     border: 1px solid pink;
+     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09-tfVHyNVqVBr4MyZmHsXKlQZ-AQzIuN9Q&usqp=CAU") no-repeat;
+     background-position: center;
+     // background-size: cover;
+     
+ }
+ .create-catagary{
+     border: 1px solid pink;
+     width: 420px;
+     margin-top: 35px;
+     background: #FB6090;
+     color: white;
+ }
+ .container{
+     border: 1px solid pink;
+     margin: 20px;
+     padding: 20px;
+     // margin: 20px 20px 0 20px;
+     // padding: 20px 20 0 20px;
+ }
+ .Sub_Categary_Name{
+     width: 97%;
+ }
+ .btn-primary{
+     position: relative;
+     top: 10px;
+     right: 520px;
+     background: none;
+     border: none;
+     color: rgb(210, 108, 125);
+     padding-left: 1px;
+ }
+ 
+ 

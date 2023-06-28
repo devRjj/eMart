@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { SharedModule } from './shared/shared.module';
 import { RegistrationModule } from './registration/registration.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegistrationModule } from './registration/registration.module';
     BrowserAnimationsModule,
     MaterialModule,
     SharedModule,
-    RegistrationModule
+    RegistrationModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

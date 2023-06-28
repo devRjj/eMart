@@ -16,7 +16,7 @@ import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatPaginatorModule } from '@angular/material/paginator'
 const MaterialComponents= [
   MatButtonModule,
   MatSidenavModule,
@@ -34,7 +34,8 @@ const MaterialComponents= [
   MatGridListModule,
   MatDialogModule,
   MatTableModule,
-  MatTabsModule
+  MatTabsModule,
+  MatPaginatorModule
 ]
 
 @NgModule({

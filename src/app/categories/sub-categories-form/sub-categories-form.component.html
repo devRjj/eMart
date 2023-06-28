@@ -1,0 +1,41 @@
+<a class="btn btn-primary " role="button" data-bs-toggle="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+  </svg>&nbsp; Dashboard</a>
+<a  class="btn btn-primary " role="button" data-bs-toggle="button" aria-pressed="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+</svg>&nbsp;Sub-catagary</a>
+<a class="btn btn-primary " aria-disabled="true" role="button" data-bs-toggle="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+</svg>&nbsp;Add</a>
+
+
+<hr>
+
+<div class="container">
+<form [formGroup]="CategoryForm" style="margin: 40px;" (ngSubmit)="Submit()">
+   <div class="row ">
+      <div class="col-md-8 p-2">
+          <label for="Sub_Categary_Name" class="form-label label">Sub Categary Name</label>
+          <input type="text" class="form-control Sub_Categary_Name" Sub_Categary_Name id="Sub_Categary_Name" formControlName="Sub_Categary_Name"> <br>
+          
+          <p><label for="Description" class="form-label">Description</label></p>
+          <textarea name="Description" id="Description" cols="106" rows="10" formControlName="Description"></textarea>
+      </div>
+      <div class="col-md-4 p-2">
+          <label for="Parent-Categary" class="form-label" >Parent Categary</label>
+          <select id="Parent-Categary" class="form-select" formControlName="Parent_Categary">
+              <option>Makeup preparation</option>
+              <option>Disabled select</option>
+              <option>Disabled select</option>
+              <option>Disabled select</option>
+            </select> <br>
+            <label for="image" class="form-label"  >Image</label><br>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="file" class="file" formControlName="image">
+            <button type="submit" *ngIf="!isUpdate" class="btn create-catagary">Create Sub Categary</button>
+            <button type="submit" *ngIf="isUpdate" class="btn create-catagary">Update Sub Categary</button>
+      </div>
+  </div>
+    </form>
+</div>
+
+

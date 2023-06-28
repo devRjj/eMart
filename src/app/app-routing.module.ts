@@ -19,6 +19,7 @@ const routes: Routes =[
   loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule) },
   {path: '', redirectTo:'/login', pathMatch: 'full'},
   { path: 'newsletter', loadChildren: () => import('./newsletter/newsletter.module').then(m => m.NewsletterModule) },
+  { path: 'banner', loadChildren: () => import('./banner/banner.module').then(m => m.BannerModule) },
   {path: '**', redirectTo:'/login', pathMatch: 'full'}
 ];
 
