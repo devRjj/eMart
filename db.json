@@ -7,9 +7,7 @@
       "image": "C:\\fakepath\\10th Marksheet.jpeg",
       "id": 5
     }
-    
   ],
-
   "Categories": [
     {
       "CreatedAt": "2023-06-25T18:17:09.265Z",
@@ -41,6 +39,64 @@
       "description": "mens ,womens, kids",
       "id": 9
     }
+  ],
+  "product": [
+    {
+      "productname": "redmief",
+      "Discription": "",
+      "Category": "",
+      "Brand": "",
+      "Status": "",
+      "Sizes": "",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "",
+      "RegualrPrice": "",
+      "SalePrice": "",
+      "Date": "",
+      "id": 1
+    },
+    {
+      "productname": "apple",
+      "Discription": "",
+      "Category": "",
+      "Brand": "",
+      "Status": "",
+      "Sizes": "",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "",
+      "RegualrPrice": "",
+      "SalePrice": "",
+      "Date": "",
+      "id": 2
+    },
+    {
+      "productname": "vivo-mobile",
+      "Discription": "",
+      "Category": "",
+      "Brand": "",
+      "Status": "",
+      "Sizes": "",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "",
+      "RegualrPrice": "",
+      "SalePrice": "",
+      "Date": "",
+      "id": 3
+    }
   ]
-
 }

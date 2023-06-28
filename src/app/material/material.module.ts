@@ -16,8 +16,10 @@ import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
-import {MatPaginatorModule } from '@angular/material/paginator'
+import {MatPaginatorModule } from '@angular/material/paginator';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 const MaterialComponents= [
+  MatSlideToggleModule,
   MatButtonModule,
   MatSidenavModule,
   MatIconModule,
