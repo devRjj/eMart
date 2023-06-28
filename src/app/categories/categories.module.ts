@@ -9,6 +9,7 @@ import { SubCategoriesFormComponent } from './sub-categories-form/sub-categories
 import { MaterialModule } from '../material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateCatComponent } from './create-cat/create-cat.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CategoriesComponent,
     MainCategoriesComponent,
     SubCategoriesComponent,
-    SubCategoriesFormComponent
+    SubCategoriesFormComponent,
+    CreateCatComponent
   ],
   imports: [
     CommonModule,
