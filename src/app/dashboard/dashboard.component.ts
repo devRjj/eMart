@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 
 @Component({
@@ -6,7 +6,9 @@ import * as Highcharts from 'highcharts';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit{
+
+  ngOnInit(): void {}
 
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
@@ -48,38 +50,36 @@ export class DashboardComponent {
       type: 'pie', // Specify the series type as 'pie'
       name: 'Value',
       data: [
-        { name: 'Category 1', y: 10 },
-        { name: 'Category 2', y: 20 },
-        { name: 'Category 3', y: 15 },
-        { name: 'Category 4', y: 8 },
-        { name: 'Category 5', y: 12 }
+        { name: 'Vivo', y: 10 },
+        { name: 'Apple', y: 20 },
+        { name: 'Samsung', y: 15 },
+        { name: 'Xiaomi', y: 8 },
+        { name: 'Oppo', y: 12 }
       ]
     }]
   };
 
-
   salesSummaryData = [
     {
-      text: 'Product A',
-      dynamicData: '100 units sold',
-      image: 'https://picsum.photos/200'
+      text: 'Daily Earnings',
+      dynamicData: '100',
+      image: 'monetization_on'
     },
     {
-      text: 'Product B',
-      dynamicData: '75 units sold',
-      image: 'https://picsum.photos/200/300?grayscale'
+      text: 'Daily Orders',
+      dynamicData: '75',
+      image: 'receipt'
     },
     {
-      text: 'Product C',
-      dynamicData: '50 units sold',
-      image: 'https://example.com/product-c-image.jpg'
+      text: 'SignUp users',
+      dynamicData: '50',
+      image: 'supervisor_account'
     },
     {
-      text: 'Product D',
-      dynamicData: '125 units sold',
-      image: 'https://example.com/product-d-image.jpg'
+      text: 'Total Product',
+      dynamicData: '125',
+      image: 'account_balance'
     }
   ];
   
-
 }

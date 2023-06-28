@@ -1,18 +1,19 @@
 
 <mat-grid-list cols="4" rowHeight="100px" gutterSize="40px" class="sales-grid">
-    <mat-grid-tile class="sales-tile" *ngFor="let summary of salesSummaryData">
-      <div class="left-side">
-        <span>{{ summary.text }}</span>
-        <span>{{ summary.dynamicData }}</span>
-      </div>
-      <div class="right-side">
-        <mat-icon>{{ summary.image }}</mat-icon>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
-  
-  
+  <mat-grid-tile class="sales-tile" *ngFor="let summary of salesSummaryData">
+    <div class="left-side">
+      <p><b>{{ summary.text}}</b></p>
+      <h1><b>{{ summary.dynamicData }}</b></h1>
+    </div>
+    <div class="right-side">
+      <mat-icon>{{ summary.image }}</mat-icon>
+      <!-- <img [src]="summary.image" alt=""> -->
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
 <div class="charts">
-    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
-    <highcharts-chart [Highcharts]="Highcharts" [options]="pieChartOptions"></highcharts-chart>
+  <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
+  <highcharts-chart [Highcharts]="Highcharts" [options]="pieChartOptions"></highcharts-chart>
 </div>

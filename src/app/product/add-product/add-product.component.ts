@@ -11,7 +11,12 @@ import { MatDialog } from '@angular/material/dialog';
 export class AddProductComponent implements OnInit{
   selectedId:string|null=null;
   addproducts!:FormGroup;
+  isviesavailable:boolean=false;
   isUpdate: boolean = false;
+  isEditable!:any;
+  viewProduct!:any;
+  backButton!:any;
+  viewselectedid:any
   DateCreate=new Date()
     constructor(private el:FormBuilder,private psotdata:AllproductserviceService,private route:ActivatedRoute,private router:Router,public dialog:  MatDialog,){}
     ngOnInit(): void {
@@ -19,12 +24,27 @@ export class AddProductComponent implements OnInit{
       this.createproduct();
       this.selectedId = this.route.snapshot.paramMap.get("id");
       console.log("selected Id", this.selectedId);
+
+      this.viewselectedid=this.route.snapshot.queryParamMap.get('id');
+      console.log("selected id",this.viewselectedid);
+      this.isEditable = this.route.snapshot.queryParamMap.get('temp');
+      console.log(this.isEditable);
+      this.viewProduct = this.route.snapshot.queryParamMap.get('productname');
+      console.log(this.viewProduct);
+      
+      this.backButton = this.route.snapshot.queryParamMap.get('flag');
+      console.log(this.backButton);
     
       if(this.selectedId)
         {
           this.isUpdate = true;
            alert("Do you Want to Edit product. ");
           this.getListforUpdation();
+        }else if(this.isEditable){
+          
+        
+          this.ViewProductDetails();
+          this.addproducts.patchValue(this.viewProduct)
         }
   
     }
@@ -110,5 +130,16 @@ export class AddProductComponent implements OnInit{
         })
     }
   
+    ViewProductDetails(){
+      const endPoint = "product/" + this.viewselectedid
+      this.psotdata.GetDataToServer(endPoint).subscribe((response:any)=>{
+        
+        console.log(response)
+       
+        this.addproducts.patchValue(response)
+  
+       
+      })
   
   }
+}

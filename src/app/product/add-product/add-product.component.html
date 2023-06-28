@@ -2,32 +2,32 @@
   <div class="row ">
     <div class="col-md-8">
       <div>
-        <label class="changeposition">Product Name</label>
-        <input type="text" class="form-control" formControlName="productname">
+        <label class="changeposition mt-2">Product Name</label>
+        <input type="text" class="form-control inputclass" formControlName="productname" [readOnly]="isEditable" >
       </div>
       <div class="productclass">
         <label class="changeposition">Description</label>
-        <textarea class="form-control" rows="3" formControlName="Discription"></textarea>
+        <textarea class="form-control inputclass" rows="3" formControlName="Discription" [readOnly]="isEditable"></textarea>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="mt-2 formmatfield">
             <mat-label>Category</mat-label>
-            <mat-select formControlName="Category">
-              <mat-option value="Category">Babyshampo</mat-option>
+            <mat-select formControlName="Category" >
+              <mat-option value="Category" >Babyshampo</mat-option>
             </mat-select>
           </mat-form-field>
         </div>
         <div class="col-md-4">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="mt-2 formmatfield1" >
             <mat-label>Brand</mat-label>
-            <input matInput placeholder="Placeholder" type="text" formControlName="Brand">
+            <input matInput placeholder="Placeholder" type="text" formControlName="Brand" [readOnly]="isEditable">
           </mat-form-field>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="formmatfield">
             <mat-label>Status</mat-label>
             <mat-select formControlName="Status">
               <mat-option value="Status">Sale</mat-option>
@@ -35,9 +35,9 @@
           </mat-form-field>
         </div>
         <div class="col-md-4">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="formmatfield1">
             <mat-label>Size</mat-label>
-            <input matInput placeholder="Placeholder" type="text" formControlName="Sizes">
+            <input matInput placeholder="Placeholder" type="text" formControlName="Sizes" [readOnly]="isEditable">
 
 
           </mat-form-field>
@@ -45,16 +45,16 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="formmatfield">
             <mat-label>Color</mat-label>
-            <input matInput placeholder="Placeholder" type="text" formControlName="Colors">
+            <input matInput placeholder="Placeholder" type="text" formControlName="Colors" [readOnly]="isEditable">
           </mat-form-field>
 
         </div>
         <div class="col-md-4">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="formmatfield1">
             <mat-label>Tags</mat-label>
-            <input matInput placeholder="Placeholder" type="text" formControlName="Tags">
+            <input matInput placeholder="Placeholder" type="text" formControlName="Tags" [readOnly]="isEditable">
           </mat-form-field>
         </div>
       </div>
@@ -64,45 +64,45 @@
     <div class="col border ">
       <div class="col-md-4 ">
 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" class="mt-2 formfield2">
           <mat-label>Product Code</mat-label>
-          <input matInput placeholder="Placeholder" type="text" formControlName="ProductCode">
+          <input matInput placeholder="Placeholder" type="text" formControlName="ProductCode" [readOnly]="isEditable">
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" class="formfield2">
           <mat-label>Product Sku</mat-label>
-          <input matInput placeholder="Placeholder" type="text" formControlName="ProductSKU">
+          <input matInput placeholder="Placeholder" type="text" formControlName="ProductSKU" [readOnly]="isEditable">
         </mat-form-field>
         <label>Gender:</label>
         <div class="gender ">
 
-          <input type="radio" formControlName="Gender" value="Men" id="id56">
+          <input type="radio" formControlName="Gender" value="Men" id="id56" [readOnly]="isEditable">
           <label class="form-check-label" for="id56">
             Men
           </label>
 
 
 
-          <input type="radio" formControlName="Gender" value="Women" id="id34">
+          <input type="radio" formControlName="Gender" value="Women" id="id34" [readOnly]="isEditable">
           <label class="form-check-label" for="id34">
             Women
           </label>
 
 
-          <input type="radio" formControlName="Gender" id="id009" value="Kids">
+          <input type="radio" formControlName="Gender" id="id009" value="Kids" [readOnly]="isEditable">
           <label class="form-check-label" for="id009">
             Kids
           </label>
 
 
-          <input type="radio" formControlName="Gender" id="id98" value="others">
+          <input type="radio" formControlName="Gender" id="id98" value="others" [readOnly]="isEditable">
           <label class="form-check-label" for="id98">
             others
           </label>
 
         </div>
-        <mat-form-field appearance="fill" class="mt-2">
+        <mat-form-field appearance="fill" class="mt-2" class="formfield2">
           <mat-label>Quantity</mat-label>
-          <input matInput placeholder="Placeholder" type="text" formControlName="quantity">
+          <input matInput placeholder="Placeholder" type="text" formControlName="quantity" [readOnly]="isEditable">
         </mat-form-field>
 
       </div>
@@ -111,21 +111,22 @@
     <div class="row">
       <div class="col-md-8">
         <p> <label class="changeposition">Product Image</label></p>
-        <input type="file" class="file" formControlName="ProductImage">
+        <input type="file" class="file" formControlName="ProductImage" [readOnly]="isEditable">
       </div>
       <div class="col">
         <div class="col-md-4  mt-5 Feactured">
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="formfield2">
             <mat-label>Regular price</mat-label>
             <input matInput placeholder="$0.00" type="text" formControlName="RegualrPrice">
           </mat-form-field>
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="fill" class="formfield2">
             <mat-label>Sale price</mat-label>
             <input matInput placeholder="$0.00" type="text" formControlName="SalePrice">
           </mat-form-field>
           <mat-slide-toggle>Feactured product</mat-slide-toggle>
           <button mat-flat-button color="accent" *ngIf="!isUpdate" (click)="SaveData()" routerLink="/product/product-list"  >Create product</button><br>
-          <button mat-flat-button color="accent" *ngIf="isUpdate" (click)="updateData()">Save</button>
+          <button mat-flat-button color="accent" *ngIf="isUpdate" (click)="updateData()" class="formfield2">Save</button>
+          
         </div>
       </div>
 
