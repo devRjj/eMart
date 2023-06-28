@@ -1,0 +1,43 @@
+<div class="container">
+  <form class="" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <div>
+      <h2 class="fw-bold">Sign Up form</h2>
+    </div>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Enter your name">
+      <!-- <mat-error *ngIf="signupForm.controls.name.touched && signupForm.controls.name.errors?.required">
+        Name is required
+      </mat-error> -->
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Enter your email">
+      <!-- <mat-error *ngIf="signupForm.controls.email.touched && signUpForm.controls.email.errors?.required">
+        Email is required
+      </mat-error>
+      <mat-error *ngIf="signupForm.controls.email.touched && signupForm.controls.email.errors?.email">
+        Please enter a valid email
+      </mat-error> -->
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" placeholder="Enter your password">
+      <!-- <mat-error *ngIf="signupForm.controls.password.touched && signupForm.controls.password.errors?.required">
+        Password is required
+      </mat-error> -->
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone" placeholder="Enter your phone number">
+      <!-- <mat-error *ngIf="signupForm.controls.phone.touched && signupForm.controls.phone.errors?.required">
+        Phone number is required
+      </mat-error> -->
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+  </form>
+</div>

@@ -7,7 +7,7 @@ import { SubCategoriesFormComponent } from './sub-categories-form/sub-categories
 import { CreateCatComponent } from './create-cat/create-cat.component';
 
 const routes: Routes = [
-  { path: '', component: CategoriesComponent },
+  { path: '', component: MainCategoriesComponent },
   { path: 'main', component: MainCategoriesComponent },
   { path: 'sub', component: SubCategoriesComponent },
   {path:'subform', component:SubCategoriesFormComponent},
