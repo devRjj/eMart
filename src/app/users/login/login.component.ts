@@ -1,22 +1,28 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { RegistrationService } from 'src/app/shared/services/registration.service';
+import { SignupComponent } from '../signup/signup.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+
   loginForm!: FormGroup;
+  dialog: any;
 
   constructor(
     private fb: FormBuilder,
     private registrationService: RegistrationService,
     private router: Router,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private matDialog: MatDialog,
   ) {}
 
   ngOnInit(): void {
@@ -47,4 +53,16 @@ export class LoginComponent {
       this.registrationService.setRegistration(false);
     }
   }
+
+  openDialog(): void {
+    // const dialogRef = 
+    this.matDialog.open(SignupComponent, {
+      width: '600px'
+    });
+
+    // dialogRef.afterClosed().subscribe((result:any) => {
+    //   console.log('The dialog was closed');
+    // });
+  }
+
 }

@@ -104,5 +104,14 @@
       "Date": "",
       "id": 3
     }
+  ],
+  "users": [
+    {
+      "name": "Devraj",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "phone": "87997979979",
+      "id": 1
+    }
   ]
 }

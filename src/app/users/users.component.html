@@ -1,0 +1,49 @@
+<div>
+    <button class="float-end border btn btn-outline me-4 buttonColor" routerLink="/users/signup"><mat-icon class="mx-2">person_add</mat-icon>signUp user</button>
+</div>
+<div class="container m-4">
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let user">{{ user.name }}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef>Email</th>
+          <td mat-cell *matCellDef="let user">{{ user.email }}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="password">
+          <th mat-header-cell *matHeaderCellDef>Password</th>
+          <td mat-cell *matCellDef="let user">{{ user.password }}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="phone">
+          <th mat-header-cell *matHeaderCellDef>Phone</th>
+          <td mat-cell *matCellDef="let user">{{ user.phone }}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let user">{{ user.status }}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="joinedOn">
+          <th mat-header-cell *matHeaderCellDef>Joined On</th>
+          <td mat-cell *matCellDef="let user">{{ user.joinedOn }}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let user">
+            <a (click)="onView(user)">
+              <mat-icon>remove_red_eye</mat-icon>
+            </a>
+          </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+</div>
+  
