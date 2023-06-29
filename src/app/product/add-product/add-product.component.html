@@ -1,4 +1,4 @@
-<form [formGroup]="addproducts">
+<form [formGroup]="addproducts" class="mx-2 mt-3">
   <div class="row ">
     <div class="col-md-8">
       <div>
@@ -31,6 +31,7 @@
             <mat-label>Status</mat-label>
             <mat-select formControlName="Status">
               <mat-option value="Status">Sale</mat-option>
+              <mat-option value="Pending">pending</mat-option>
             </mat-select>
           </mat-form-field>
         </div>
@@ -73,34 +74,34 @@
           <input matInput placeholder="Placeholder" type="text" formControlName="ProductSKU" [readOnly]="isEditable">
         </mat-form-field>
         <label>Gender:</label>
-        <div class="gender ">
+        <div class="mt-4 gender ">
 
-          <input type="radio" formControlName="Gender" value="Men" id="id56" [readOnly]="isEditable">
+          <input type="radio" formControlName="Gender" class="m-2" value="Men" id="id56" [readOnly]="isEditable">
           <label class="form-check-label" for="id56">
             Men
           </label>
 
 
 
-          <input type="radio" formControlName="Gender" value="Women" id="id34" [readOnly]="isEditable">
+          <input type="radio" formControlName="Gender" class="m-2" value="Women" id="id34" [readOnly]="isEditable">
           <label class="form-check-label" for="id34">
             Women
           </label>
 
 
-          <input type="radio" formControlName="Gender" id="id009" value="Kids" [readOnly]="isEditable">
+          <input type="radio" formControlName="Gender" class="m-2" id="id009" value="Kids" [readOnly]="isEditable">
           <label class="form-check-label" for="id009">
             Kids
           </label>
 
 
-          <input type="radio" formControlName="Gender" id="id98" value="others" [readOnly]="isEditable">
+          <input type="radio" formControlName="Gender" class="m-2" id="id98" value="others" [readOnly]="isEditable">
           <label class="form-check-label" for="id98">
             others
           </label>
 
         </div>
-        <mat-form-field appearance="fill" class="mt-2" class="formfield2">
+        <mat-form-field appearance="fill" class="mt-2" class="mt-5 formfield2">
           <mat-label>Quantity</mat-label>
           <input matInput placeholder="Placeholder" type="text" formControlName="quantity" [readOnly]="isEditable">
         </mat-form-field>
@@ -115,20 +116,22 @@
       </div>
       <div class="col">
         <div class="col-md-4  mt-5 Feactured">
-          <mat-form-field appearance="fill" class="formfield2">
+          <mat-form-field appearance="fill" class="formfield3">
             <mat-label>Regular price</mat-label>
             <input matInput placeholder="$0.00" type="text" formControlName="RegualrPrice">
           </mat-form-field>
-          <mat-form-field appearance="fill" class="formfield2">
+          <mat-form-field appearance="fill" class="formfield3">
             <mat-label>Sale price</mat-label>
             <input matInput placeholder="$0.00" type="text" formControlName="SalePrice">
           </mat-form-field>
           <mat-slide-toggle>Feactured product</mat-slide-toggle>
-          <button mat-flat-button color="accent" *ngIf="!isUpdate" (click)="SaveData()" routerLink="/product/product-list"  >Create product</button><br>
+          <br>
           <button mat-flat-button color="accent" *ngIf="isUpdate" (click)="updateData()" class="formfield2">Save</button>
           
         </div>
+        <button class="mt-4 buttonclass" mat-flat-button color="accent" *ngIf="!isUpdate" (click)="SaveData()" routerLink="/product/product-list"  >Create product</button>
       </div>
+      
 
 
     </div>
