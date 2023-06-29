@@ -23,11 +23,9 @@
       </div>
       <div class="col-md-4 p-2">
           <label for="Parent-Categary" class="form-label" >Parent Categary</label>
-          <select id="Parent-Categary" class="form-select" formControlName="Parent_Categary">
-              <option>Makeup preparation</option>
-              <option>Disabled select</option>
-              <option>Disabled select</option>
-              <option>Disabled select</option>
+          <select id="Parent-Categary" class="form-select"  >
+              <option *ngFor="let item of getmaincategorydata" >{{item}}</option>
+             
             </select> <br>
             <label for="image" class="form-label"  >Image</label><br>
             <input type="file" accept="image/jpeg, image/png, image/jpg" id="file" class="file" formControlName="image">

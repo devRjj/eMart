@@ -38,6 +38,12 @@
       "category": "clothing",
       "description": "mens ,womens, kids",
       "id": 9
+    },
+    {
+      "CreatedAt": "2023-06-29T01:22:18.758Z",
+      "category": "soyanean",
+      "description": "grossary",
+      "id": 10
     }
   ],
   "product": [

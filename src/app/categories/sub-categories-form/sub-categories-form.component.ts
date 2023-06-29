@@ -14,14 +14,14 @@ export class SubCategoriesFormComponent {
   selectedId: string | null = null;
 
   isUpdate: boolean = false;
-
+  getmaincategorydata:any[]=[];
   constructor(private router: Router, private fb: FormBuilder, private http:HttpService,
     public dialog: MatDialog, private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
     this.createFormStructure();
-
+    this.getmaincateries()
     this.selectedId = this.route.snapshot.paramMap.get("id");
     console.log("selected Id", this.selectedId);
 
@@ -92,6 +92,15 @@ export class SubCategoriesFormComponent {
         console.log("Category not getting updated");
       })
   }
-
+ getmaincateries(){
+  this.http.getDataToServer("Categories").subscribe((res:any)=>{
+  console.log("get main cateries",res)
+  res.filter((el:any)=>{
+    this.getmaincategorydata.push(el.category)
+    
+  }) 
+   
+  })
+ }
 
 }
