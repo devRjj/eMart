@@ -29,7 +29,8 @@ export class SignupComponent {
       name: ['', [Validators.required]],
       email: ['', [Validators.required]],
       password: ['', [Validators.required]],
-      phone: ['', [Validators.required]]
+      phone: ['', [Validators.required]],
+      dateOfJoining: new Date().toISOString().slice(0, 10)
     })
   }
 
@@ -43,6 +44,7 @@ export class SignupComponent {
       this.httpUsers.post('http://localhost:3000/users', this.signUpForm.value).subscribe((el:any)=>{
         console.log(el);
       })
+      this.signUpForm.reset();
     }
   }
 

@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { DialogBoxComponent } from './dialog-box/dialog-box.component';
 
 @Component({
@@ -19,7 +19,12 @@ export class NewsletterComponent implements OnInit{
   }
 
   openDialog(): void {
-    this.dialog.open(DialogBoxComponent);
+    const config = new MatDialogConfig;
+    config.position ={
+      top: '50px',
+      left: '550px'
+    }
+    this.dialog.open(DialogBoxComponent, config);
   }
 
 

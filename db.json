@@ -48,44 +48,6 @@
   ],
   "product": [
     {
-      "productname": "apple",
-      "Discription": "",
-      "Category": "",
-      "Brand": "",
-      "Status": "",
-      "Sizes": "",
-      "Colors": "",
-      "Tags": "",
-      "ProductImage": "",
-      "ProductCode": "",
-      "ProductSKU": "",
-      "Gender": "",
-      "quantity": "",
-      "RegualrPrice": "",
-      "SalePrice": "",
-      "Date": "",
-      "id": 2
-    },
-    {
-      "productname": "vivo-mobile",
-      "Discription": "",
-      "Category": "",
-      "Brand": "",
-      "Status": "",
-      "Sizes": "",
-      "Colors": "",
-      "Tags": "",
-      "ProductImage": "",
-      "ProductCode": "",
-      "ProductSKU": "",
-      "Gender": "",
-      "quantity": "",
-      "RegualrPrice": "",
-      "SalePrice": "",
-      "Date": "",
-      "id": 3
-    },
-    {
       "productname": "mama",
       "Discription": "",
       "Category": "Category",
@@ -103,22 +65,73 @@
       "SalePrice": "50",
       "Date": "",
       "id": 4
+    },
+    {
+      "productname": "iPhone",
+      "Discription": "200mp Camera, A16 Bionic",
+      "Category": "Category",
+      "Brand": "Apple",
+      "Status": "Status",
+      "Sizes": "",
+      "Colors": "Rose gold",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "alpha",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "1",
+      "RegualrPrice": "999",
+      "SalePrice": "998",
+      "Date": "2023-06-29",
+      "id": 5
     }
   ],
   "users": [
     {
-      "name": "Devraj",
-      "email": "test@gmail.com",
-      "password": "123456",
-      "phone": "87997979979",
-      "id": 1
+      "name": "Arvind",
+      "email": "ar@gmail.com",
+      "password": "098098",
+      "phone": "9898988989",
+      "dateOfJoining": "2023-06-29",
+      "id": 3
     },
     {
-      "name": "prasad",
+      "name": "Devraj",
+      "email": "dv@gmail.com",
+      "password": "dvdvdvdv",
+      "phone": "8984479549",
+      "dateOfJoining": "2023-06-29",
+      "id": 4
+    },
+    {
+      "name": "Prasad",
       "email": "pr@gmail.com",
-      "password": "xyz",
-      "phone": "9798979989",
+      "password": "prprprprp",
+      "phone": "3458973953",
+      "dateOfJoining": "2023-06-29",
+      "id": 5
+    },
+    {
+      "name": "Rashford",
+      "email": "rashi@gmail.com",
+      "password": "rashi",
+      "phone": "3972434849",
+      "dateOfJoining": "2023-06-29",
+      "id": 6
+    }
+  ],
+  "newsletter": [
+    {
+      "email": "test@gmail.com",
       "id": 2
+    },
+    {
+      "email": "test1@gmail.com",
+      "id": 3
+    },
+    {
+      "email": "test3@gmail.com",
+      "id": 4
     }
   ]
 }

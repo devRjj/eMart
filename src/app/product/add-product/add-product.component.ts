@@ -71,10 +71,10 @@ export class AddProductComponent {
       quantity: ['', []],
       RegualrPrice: ['', []],
       SalePrice: ['', []],
-      Date: ['', []],
+      Date: new Date().toISOString().slice(0, 10)
     });
   }
-  
+
   SaveData() {
     if (this.addproducts.valid) {
       const body = this.addproducts.value;

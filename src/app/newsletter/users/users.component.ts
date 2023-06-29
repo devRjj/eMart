@@ -7,32 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent {
+  
+  dataSource:any;
+  displayedColumns: string[] = ['id', 'email', 'interest', 'modify'];
 
   constructor(private http: HttpClient){}
 
   ngOnInit(){
-    // this.http.get('https://emartvct-default-rtdb.firebaseio.com/newsletter').subscribe(res =>{
-    //   console.log(res)
-    //   this.dataSource = res
-    // })
+    this.http.get('http://localhost:3000/newsletter').subscribe(res =>{
+      console.log(res)
+      this.dataSource = res
+    })
   }
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource= ELEMENT_DATA;
-
-
-
+  onDelete(id:any){
+    this.http.delete('http://localhost:3000/newsletter/'+id).subscribe((response:any)=>{
+      console.log(response);
+    },
+    (error:any)=>{
+      console.log('ye error hai', error.message)
+    })
+  }  
 }
-
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'}
-];

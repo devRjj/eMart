@@ -36,8 +36,17 @@ export class UsersComponent implements OnInit {
     config.data = {
       name: user.name,
       email: user.email,
-      phone: user.phone
+      phone: user.phone,
     }
     this.dialog.open(ViewComponent, config)
+  }
+
+  onDelete(userId:any){
+    this.http.delete('http://localhost:3000/users/'+userId).subscribe((response:any)=>{
+      console.log(response);
+    },
+    (error:any)=>{
+      console.log('ye error hai', error.message);
+    })
   }
 }

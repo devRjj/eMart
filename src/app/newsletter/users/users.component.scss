@@ -1,7 +1,13 @@
 .fill-remaining-space {
-    flex: 1 1 auto;
-  }
-  table {
-    width: 50%;
-    margin: 30px auto;
-  }
+  flex: 1 1 auto;
+}
+
+table {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.mat-mdc-table .mdc-data-table__header-row {
+  height: 54px;
+  background-color: #ff408191;
+}
