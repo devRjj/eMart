@@ -1,0 +1,37 @@
+<div class="demo-button-container">
+    <ul class="class1">
+      <li>
+        <a>Dashboard</a>
+      </li>
+    </ul>   
+    <ul class="class2">
+      <li>
+        <a>Category</a>
+      </li>
+    </ul>  
+    <ul class="class3">
+        <li>
+          <a>Add</a>
+        </li>
+      </ul>  
+    </div> 
+    
+  <form [formGroup]="CategoryForm" style="margin: 40px;" (ngSubmit)="Submit()">
+    <mat-form-field class="min" appearance="outline">
+      <mat-label>Category Name</mat-label>
+      <input matInput  formControlName="category">
+    </mat-form-field>
+    
+      <mat-form-field class="max" appearance="outline" >
+        <mat-label >Description</mat-label>
+        <input matInput formControlName="description">
+        <textarea  rows="10" cols="130" matInput></textarea>
+      </mat-form-field>
+      <mat-dialog-actions *ngIf="!isUpdate">
+        <button type="submit"  class="btn btn-primary">Create Category</button>
+      </mat-dialog-actions>
+      <mat-dialog-actions *ngIf="isUpdate">
+        <button type="submit"  class="btn btn-primary">update Category</button>
+      </mat-dialog-actions>
+    </form>
+  

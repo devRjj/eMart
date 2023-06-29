@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { AllproductserviceService } from './services/allproductservice.service';
 
 
 
@@ -19,7 +20,7 @@ import { RouterModule } from '@angular/router';
   ],
   exports:[
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
   ]
 })
 export class SharedModule { }

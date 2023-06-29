@@ -13,7 +13,7 @@
                         <button routerLink="/categories/main" mat-button><mat-icon>main</mat-icon>Main</button>
                     </mat-list-item>
                     <mat-list-item routerLinkActive="buttonColor">
-                        <button routerLink="/product/product-list" mat-button><mat-icon>sub</mat-icon>Sub</button>
+                        <button routerLink="/categories/sub" mat-button><mat-icon>sub</mat-icon>Sub</button>
                     </mat-list-item>
                 </mat-nav-list>
             </mat-expansion-panel>
@@ -25,7 +25,7 @@
                 <button mat-button><mat-icon>shopping_cart</mat-icon>Orders</button>
             </mat-list-item>
             <mat-list-item routerLinkActive="buttonColor">
-                <button mat-button><mat-icon>supervisor_account</mat-icon>Users</button>
+                <button routerLink="/users" mat-button><mat-icon>supervisor_account</mat-icon>Users</button>
             </mat-list-item>
             <mat-list-item routerLinkActive="buttonColor">
                 <button routerLink="/newsletter" mat-button><mat-icon>email</mat-icon>Newsletter</button>
@@ -39,6 +39,7 @@
                     <a mat-list-item routerLink="">General</a>
                     <a mat-list-item routerLink="">Advanced settings</a>
                     <a mat-list-item routerLink="">Account Settings</a>
+                    <a mat-list-item routerLink="/banner">Fronted App Seting</a>
                 </mat-nav-list>
             </mat-expansion-panel>
         </mat-nav-list>

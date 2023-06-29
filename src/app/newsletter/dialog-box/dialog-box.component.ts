@@ -32,8 +32,11 @@ export class DialogBoxComponent {
 
     const header = new HttpHeaders().set('Content-Type', 'application/json')
     if(this.newsletterForm.valid) {
-      this.http.post('https://emartvct-default-rtdb.firebaseio.com/newsletter.json', this.newsletterForm.value, {headers: header}).subscribe(el => {
+      this.http.post('http://localhost:3000/newsletter', this.newsletterForm.value, {headers: header}).subscribe(el => {
         console.log(el)
+      },
+      (error)=>{
+        console.log("ye error hai", error.message)
       })
       // console.log(this.newsletterForm.get('email')?.value);
     }

@@ -17,9 +17,14 @@ import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatPaginatorModule } from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 const MaterialComponents= [
   MatDialogModule,
+  MatSlideToggleModule,
   MatButtonModule,
   MatSidenavModule,
   MatIconModule,
@@ -38,7 +43,10 @@ const MaterialComponents= [
   MatGridListModule,
   MatDialogModule,
   MatTableModule,
-  MatTabsModule
+  MatTabsModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatFormFieldModule
 ]
 
 @NgModule({

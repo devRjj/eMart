@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  mat-form-field {
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    background-color: pink;
+  }
+  

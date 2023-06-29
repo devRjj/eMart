@@ -6,7 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
-  styleUrls: ['./add-product.component.scss']
+  styleUrls: ['./add-product.component.scss'],
 })
 export class AddProductComponent implements OnInit{
   selectedId:string|null=null;
@@ -65,7 +65,7 @@ export class AddProductComponent implements OnInit{
         quantity:['',[]],
         RegualrPrice:['',[]],
         SalePrice:['',[]],
-        Date:['',[]]
+        Date: new Date().toISOString().slice(0, 10)
   
       })
     }

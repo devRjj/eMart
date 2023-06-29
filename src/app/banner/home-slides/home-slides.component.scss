@@ -1,0 +1,43 @@
+.container img{
+    margin-top: 60px;
+   width: 100%;
+   height: 460px;
+   border-radius: 2%;
+   position: relative;
+}
+.button{
+   position: absolute;
+   bottom: 200px;
+   left: 90px;
+}
+.Delete{
+   background: rgb(184, 71, 90);
+   border-radius: 0;
+   color: white;
+   border: 1px solid pink;
+}
+.Edit{
+   background: none;
+   border-radius: 0;
+   color: rgb(235, 150, 164);
+   border: 1px solid pink;
+}
+.heading{
+   font-size: 60px;
+   line-height: 30px;
+   line-break: auto;
+   font-weight: 500;
+   display: flex;
+   text-align: start;
+}
+.head{
+   position: absolute;
+   bottom: 300px;
+   left: 90px;
+}
+.Paragraph{
+   position: absolute;
+   bottom: 250px;
+   left: 90px;
+   font-weight: 500;
+}

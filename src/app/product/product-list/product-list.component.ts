@@ -7,7 +7,7 @@ import { AllproductserviceService } from 'src/app/shared/services/allproductserv
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent {
   displayedColumns: string[] = ['Product', 'Created', 'Status', 'Rating','price','Feactured','Actions'];
@@ -17,51 +17,96 @@ export class ProductListComponent {
  constructor(private productlistservice:AllproductserviceService,private route:Router,public dialog: MatDialog) {
 
   }
- ngOnInit() {
+//  ngOnInit() {
     
-    this.productlistadded()
+//     this.productlistadded()
     
-  }
-  productlistadded(){
-    this.productlistservice.GetDataToServer("product").subscribe((el:any)=>{
-      console.log(el)
-      this.dataSource=new MatTableDataSource(el);;
+//   }
+  // productlistadded(){
+  //   this.productlistservice.GetDataToServer("product").subscribe((el:any)=>{
+  //     console.log(el)
+  //     this.dataSource=new MatTableDataSource(el);;
       
-    })
+  //   })
+  // }
+
+
+ 
+
+
+//  OnDelete(rowData: any) 
+//   {
+//     alert("Do you really want to delete  ? Category will be Deleted permanently.")
+   
+//      // console.log(rowData);
+//     let selectedIndex = this.dataSource.data.findIndex((el: any) => el.id === rowData.id);
+//     console.log("selectedIndex", selectedIndex);
+   
+//     const endpoint = "product/" + rowData.id;
+//     this.productlistservice.DeleteDataToServer(endpoint).subscribe((res: any) => 
+//     {
+//       console.log(res);
+    
+//       this.dataSource.data.splice(selectedIndex, 1);
+//       console.log("product Deleted SucessFully...!", this.dataSource);
+
+//       alert(" Deleted SucessFully...!");
+//       this.dataSource._updateChangeSubscription();
+//     },
+//       error => 
+//       {
+//         console.log(" product not deleted....!!")
+//       })
+
+//     }
+ 
+
+
+
+//   dataSource!: MatTableDataSource<any>;
+
+//   TodaysDate = new Date();
+//   constructor(
+//     private productlistservice: ProductService,
+//     private route: Router,
+//     public dialog: MatDialog
+//   ) {}
+
+  ngOnInit() {
+    this.productlistadded();
   }
 
+  productlistadded() {
+    this.productlistservice.GetDataToServer('product').subscribe((el: any) => {
+      console.log(el);
+      this.dataSource = new MatTableDataSource(el);
+    });
+  }
 
- 
+  OnDelete(rowData: any) {
+    alert(
+      'Do you really want to delete  ? Category will be Deleted permanently.'
+    );
+    let selectedIndex = this.dataSource.data.findIndex(
+      (el: any) => el.id === rowData.id
+    );
+    console.log('selectedIndex', selectedIndex);
 
+    const endpoint = 'product/' + rowData.id;
+    this.productlistservice.DeleteDataToServer(endpoint).subscribe(
+      (res: any) => {
+        console.log(res);
 
- OnDelete(rowData: any) 
-  {
-    alert("Do you really want to delete  ? Category will be Deleted permanently.")
-   
-     // console.log(rowData);
-    let selectedIndex = this.dataSource.data.findIndex((el: any) => el.id === rowData.id);
-    console.log("selectedIndex", selectedIndex);
-   
-    const endpoint = "product/" + rowData.id;
-    this.productlistservice.DeleteDataToServer(endpoint).subscribe((res: any) => 
-    {
-      console.log(res);
-    
-      this.dataSource.data.splice(selectedIndex, 1);
-      console.log("product Deleted SucessFully...!", this.dataSource);
+        this.dataSource.data.splice(selectedIndex, 1);
+        console.log('product Deleted SucessFully...!', this.dataSource);
 
-      alert(" Deleted SucessFully...!");
-      this.dataSource._updateChangeSubscription();
-    },
-      error => 
-      {
-        console.log(" product not deleted....!!")
-      })
-
-    }
- 
-
-
-
+        alert(' Deleted SucessFully...!');
+        this.dataSource._updateChangeSubscription();
+      },
+      (error) => {
+        console.log(' product not deleted....!!');
+      }
+    );
+  }
 }
 
