@@ -14,6 +14,7 @@ export class SubCategoriesComponent {
   displayedColumns: string[] = ['Category', 'Discription','Total-item', 'Created At', 'Action'];
   dataSource!: MatTableDataSource<any>;
   todaysDate = new Date();
+  
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -64,5 +65,6 @@ export class SubCategoriesComponent {
 
     }
  
+
 
 }
