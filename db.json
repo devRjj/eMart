@@ -42,25 +42,6 @@
   ],
   "product": [
     {
-      "productname": "redmief",
-      "Discription": "",
-      "Category": "",
-      "Brand": "",
-      "Status": "",
-      "Sizes": "",
-      "Colors": "",
-      "Tags": "",
-      "ProductImage": "",
-      "ProductCode": "",
-      "ProductSKU": "",
-      "Gender": "",
-      "quantity": "",
-      "RegualrPrice": "",
-      "SalePrice": "",
-      "Date": "",
-      "id": 1
-    },
-    {
       "productname": "apple",
       "Discription": "",
       "Category": "",
@@ -97,6 +78,25 @@
       "SalePrice": "",
       "Date": "",
       "id": 3
+    },
+    {
+      "productname": "mama",
+      "Discription": "",
+      "Category": "Category",
+      "Brand": "",
+      "Status": "Status",
+      "Sizes": "",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "",
+      "RegualrPrice": "50",
+      "SalePrice": "50",
+      "Date": "",
+      "id": 4
     }
   ],
   "users": [
@@ -106,6 +106,13 @@
       "password": "123456",
       "phone": "87997979979",
       "id": 1
+    },
+    {
+      "name": "prasad",
+      "email": "pr@gmail.com",
+      "password": "xyz",
+      "phone": "9798979989",
+      "id": 2
     }
   ]
 }
