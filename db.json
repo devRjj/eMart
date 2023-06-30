@@ -84,6 +84,25 @@
       "SalePrice": "998",
       "Date": "2023-06-29",
       "id": 5
+    },
+    {
+      "productname": "Prasad Kadam",
+      "Discription": "parbani",
+      "Category": "Category",
+      "Brand": "Maharashtra",
+      "Status": "Pending",
+      "Sizes": "xl",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "845`",
+      "ProductSKU": "",
+      "Gender": "Women",
+      "quantity": "",
+      "RegualrPrice": "999",
+      "SalePrice": "99",
+      "Date": "2023-06-30",
+      "id": 6
     }
   ],
   "users": [

@@ -1,12 +1,16 @@
-.position{
-    position: relative;left:400px;
-    margin-top:6px;
+.position {
+    position: relative;
+    left: 400px;
+    margin-top: 6px;
 }
-.manually{
+
+.manually {
     display: inline-block;
-    position: relative;left: 0px;
+    position: relative;
+    left: 0px;
 }
-.btn-primary{
+
+.btn-primary {
     position: relative;
     top: 1px;
     right: 300px;
@@ -15,7 +19,22 @@
     color: rgb(210, 108, 125);
     padding-left: 1px;
 }
-.mat-elevation-z8{
-margin: 20px;
-border: 1px solid black;
+
+.mat-elevation-z8 {
+    margin: 20px;
+    border: 1px solid black;
+}
+
+
+.mat-mdc-table .mdc-data-table__header-row {
+    background-color: #ff4081;
+}
+
+.status-pill {
+    display: inline-block;
+    // padding: 10px 10px;
+    border-radius: 20px;
+    background-color: green;
+    color: #fff;
+    margin-top: 15px;
 }

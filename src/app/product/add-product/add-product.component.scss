@@ -1,68 +1,80 @@
-
-.file{
+.file {
     height: 220px;
     width: 650px;
     border: 1px solid pink;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09-tfVHyNVqVBr4MyZmHsXKlQZ-AQzIuN9Q&usqp=CAU") no-repeat;
     background-position: center;
-
-    // background-size: cover;
-    
 }
-.col-md-4{
+
+.col-md-4 {
     margin-right: 2px;
 }
-.form-label{
+
+.form-label {
     display: flex;
     text-align: start;
-    
+
 }
-.width{
+
+.width {
     width: 430px;
-    
+
 }
-.form-select{
-width:300px;
+
+.form-select {
+    width: 300px;
 }
-.Brand{
-    width:300px;
-    display:flex;
+
+.Brand {
+    width: 300px;
+    display: flex;
 }
-.changeposition{
+
+.changeposition {
     display: flex;
     text-align: start;
 }
-.Feactured{
+
+.Feactured {
     width: auto;
 }
-.gender{
-    width:200px;
+
+.gender {
+    width: 200px;
 }
-.formclassapply{
+
+.formclassapply {
     width: 500px;
 }
-.inputclass{
+
+.inputclass {
     width: 100%;
 }
-.formmatfield{
+
+.formmatfield {
     width: 155%;
-   // margin-top: 2%;
+    // margin-top: 2%;
     //border: 1px solid black;
 }
-.formmatfield1{
+
+.formmatfield1 {
     width: 155%;
     margin-left: 55%;
-   // margin-top: 2%;
+    // margin-top: 2%;
 }
-.formfield2{
-    width:260%
+
+.formfield2 {
+    width: 260%
 }
-.formfield3{
-    width:100%;
-}
-.buttonclass{
+
+.formfield3 {
     width: 100%;
 }
-.savebutton{
-    width:100%
+
+.buttonclass {
+    width: 100%;
+}
+
+.savebutton {
+    width: 100%
 }

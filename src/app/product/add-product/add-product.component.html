@@ -3,23 +3,24 @@
     <div class="col-md-8">
       <div>
         <label class="changeposition mt-2">Product Name</label>
-        <input type="text" class="form-control inputclass" formControlName="productname" [readOnly]="isEditable" >
+        <input type="text" class="form-control inputclass" formControlName="productname" [readOnly]="isEditable">
       </div>
       <div class="productclass">
         <label class="changeposition">Description</label>
-        <textarea class="form-control inputclass" rows="3" formControlName="Discription" [readOnly]="isEditable"></textarea>
+        <textarea class="form-control inputclass" rows="3" formControlName="Discription"
+          [readOnly]="isEditable"></textarea>
       </div>
       <div class="row">
         <div class="col-md-4">
           <mat-form-field appearance="fill" class="mt-2 formmatfield">
             <mat-label>Category</mat-label>
-            <mat-select formControlName="Category" >
-              <mat-option value="Category" >Babyshampo</mat-option>
+            <mat-select formControlName="Category">
+              <mat-option value="Category">Babyshampo</mat-option>
             </mat-select>
           </mat-form-field>
         </div>
         <div class="col-md-4">
-          <mat-form-field appearance="fill" class="mt-2 formmatfield1" >
+          <mat-form-field appearance="fill" class="mt-2 formmatfield1">
             <mat-label>Brand</mat-label>
             <input matInput placeholder="Placeholder" type="text" formControlName="Brand" [readOnly]="isEditable">
           </mat-form-field>
@@ -126,20 +127,13 @@
           </mat-form-field>
           <mat-slide-toggle>Feactured product</mat-slide-toggle>
           <br>
-          <button mat-flat-button color="accent" *ngIf="isUpdate" (click)="updateData()" class="savebutton">Save</button>
-          
+          <button mat-flat-button color="accent" *ngIf="isUpdate" (click)="updateData()"
+            class="savebutton">Save</button>
+
         </div>
-        <button class="mt-4 buttonclass" mat-flat-button color="accent" *ngIf="!isUpdate" (click)="SaveData()" routerLink="/product/product-list"  >Create product</button>
+        <button class="mt-4 buttonclass" mat-flat-button color="accent" *ngIf="!isUpdate" (click)="SaveData()"
+          routerLink="/product/product-list">Create product</button>
       </div>
-      
-
-
     </div>
-
-
   </div>
-
-
-
-
-</form> 
+</form>
