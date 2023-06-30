@@ -12,17 +12,18 @@ import {MatDividerModule } from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTooltipModule } from '@angular/material/tooltip';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule } from '@angular/material/paginator';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSortModule} from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 const MaterialComponents= [
+  MatDialogModule,
   MatSlideToggleModule,
   MatButtonModule,
   MatSidenavModule,
@@ -37,6 +38,8 @@ const MaterialComponents= [
   MatDividerModule,
   MatExpansionModule,
   MatTooltipModule,
+  MatSlideToggleModule,
+  MatTableModule,
   MatGridListModule,
   MatDialogModule,
   MatTableModule,
