@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 
 @Component({
@@ -6,7 +6,9 @@ import * as Highcharts from 'highcharts';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit{
+
+  ngOnInit(): void {}
 
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
@@ -48,14 +50,36 @@ export class DashboardComponent {
       type: 'pie', // Specify the series type as 'pie'
       name: 'Value',
       data: [
-        { name: 'Category 1', y: 10 },
-        { name: 'Category 2', y: 20 },
-        { name: 'Category 3', y: 15 },
-        { name: 'Category 4', y: 8 },
-        { name: 'Category 5', y: 12 }
+        { name: 'Vivo', y: 10 },
+        { name: 'Apple', y: 20 },
+        { name: 'Samsung', y: 15 },
+        { name: 'Xiaomi', y: 8 },
+        { name: 'Oppo', y: 12 }
       ]
     }]
   };
-  
 
+  salesSummaryData = [
+    {
+      text: 'Daily Earnings',
+      dynamicData: '100',
+      image: 'monetization_on'
+    },
+    {
+      text: 'Daily Orders',
+      dynamicData: '75',
+      image: 'receipt'
+    },
+    {
+      text: 'SignUp users',
+      dynamicData: '50',
+      image: 'supervisor_account'
+    },
+    {
+      text: 'Total Product',
+      dynamicData: '125',
+      image: 'account_balance'
+    }
+  ];
+  
 }

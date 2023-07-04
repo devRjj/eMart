@@ -1,0 +1,69 @@
+.min 
+{
+  width: 100%;
+  padding: 1px;
+  position:relative;
+  top:-20px;
+}
+
+.max
+{
+  height: 100%;
+  width: 100%;
+  top:40px;
+}
+
+
+.class1 
+{
+  color: #4e484a;
+  position: relative;
+  right: 450px;
+  top: 15px;
+  font-size: 14px;
+
+}
+
+.class2 
+{
+  color: #4e484a;
+  position: relative;
+  bottom: 20px;
+  right: 360px;
+  font-size: 14px;
+}
+
+.class3 
+{
+  color: #4e484a;
+  position: relative;
+  bottom: 54px;
+  right: 290px;
+
+}
+
+.container {
+  position: absolute;
+
+}
+
+
+.demo-button-container {
+  background-color: white;
+  height: 40px;
+}
+
+.btn-primary {
+  position: absolute;
+  background: none;
+  right: 800px;
+  background-color: #ff4081;
+  border: none;
+  top: 480px
+}
+
+.btn-primary:active:hover {
+  background: none;
+}
+
+

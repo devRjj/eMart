@@ -1,0 +1,76 @@
+.demo-table {
+    width: 100%;
+  }
+  
+  .demo-button-container {
+    padding-bottom: 16px;
+  }
+  
+  .demo-button+.demo-button {
+    margin-left: 8px;
+  }
+  
+  table .mat-mdc-header-cell {
+    background-color: #ff4081;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .mat-toolbar-single-row {
+  
+    background-color: whitesmoke;
+  }
+  
+  .mat-elevation-z8 {
+  
+    margin-left: 20px;
+    margin-right: 20px;
+  
+  }
+  
+  .mat-mdc-table {
+    table-layout: auto;
+  
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  // top div css
+  .btn-primary {
+  
+    background: none;
+    color: #ff4081;
+    position: relative;
+    right: 320px;
+    margin-top: 5px;
+    border: none;
+    font-size: 14px;
+  
+  }
+  
+  .btn-primary:active:hover {
+    background: none;
+  }
+  
+  .div1 {
+    height: 60px;
+  
+  }
+  
+  .btn2 {
+    color: #ff4081;
+    background: none;
+    position: relative;
+    left: 290px;
+    border: none;
+    // bottom: 66px;
+    font-size: 14px;
+    top: 8px
+  }
+  
+  
+  .demo-button-container {
+    background-color: white;
+  }
+  
+  

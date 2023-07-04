@@ -1,5 +1,55 @@
-.charts{
+.charts {
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 70px;
+}
+
+.sales-grid {
+    margin: 40px;
+}
+
+.sales-tile {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    // margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: #f7cef1;
+    padding: 8px;
+    height: 100px;
+    /* Update the row height to 100 pixels */
+    overflow: hidden;
+}
+
+// .left-side {
+//     flex-grow: 1;
+// }
+
+// .right-side {
+//     display: flex;
+//     align-items: center;
+// }
+
+.sales-image {
+    height: 80%;
+    margin-left: 8px;
+    border-radius: 50%;
+    color: #ff4081;
+}
+
+.material-icons{
+    font-size: 87px;
+    margin-left: 0px;
+}
+
+.mat-icon {
+   
+    height: 87px;
+    width: 87px;
+    overflow: hidden;
+    color: hotpink;
+    // background-color: lightpink;
+    margin-top: 5px;
+    margin-left: 60px;
 }

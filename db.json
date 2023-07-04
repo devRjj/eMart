@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "Sub_Categary_Name": "fdsv",
+      "Description": "fvrds",
+      "Parent_Categary": "Disabled select",
+      "image": "C:\\fakepath\\10th Marksheet.jpeg",
+      "id": 5
+    }
+  ],
+  "Categories": [
+    {
+      "CreatedAt": "2023-06-25T18:17:09.265Z",
+      "category": "Beauty",
+      "description": "skincares,makeup",
+      "id": 5
+    },
+    {
+      "CreatedAt": "2023-06-25T10:34:26.368Z",
+      "category": "pharmacy",
+      "description": "medicines",
+      "id": 6
+    },
+    {
+      "CreatedAt": "2023-06-25T10:35:16.079Z",
+      "category": "home appliances",
+      "description": "furniture,washing Machine.",
+      "id": 7
+    },
+    {
+      "CreatedAt": "2023-06-25T10:36:17.855Z",
+      "category": "mobiles",
+      "description": "latest lauch, realme,oneplus,Samsung",
+      "id": 8
+    },
+    {
+      "CreatedAt": "2023-06-25T15:17:03.937Z",
+      "category": "clothing",
+      "description": "mens ,womens, kids",
+      "id": 9
+    },
+    {
+      "CreatedAt": "2023-06-29T01:22:18.758Z",
+      "category": "soyanean",
+      "description": "grossary",
+      "id": 10
+    }
+  ],
+  "product": [
+    {
+      "productname": "mera-wala",
+      "Discription": "",
+      "Category": "Category",
+      "Brand": "",
+      "Status": "Status",
+      "Sizes": "",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "",
+      "RegualrPrice": "50",
+      "SalePrice": "50",
+      "Date": "",
+      "id": 4
+    },
+    {
+      "productname": "iPhone",
+      "Discription": "200mp Camera, A16 Bionic",
+      "Category": "Category",
+      "Brand": "Apple",
+      "Status": "Status",
+      "Sizes": "",
+      "Colors": "Rose gold",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "alpha",
+      "ProductSKU": "",
+      "Gender": "",
+      "quantity": "1",
+      "RegualrPrice": "999",
+      "SalePrice": "998",
+      "Date": "2023-06-29",
+      "id": 5
+    },
+    {
+      "productname": "Prasad Kadam",
+      "Discription": "parbani",
+      "Category": "Category",
+      "Brand": "Maharashtra",
+      "Status": "Pending",
+      "Sizes": "xl",
+      "Colors": "",
+      "Tags": "",
+      "ProductImage": "",
+      "ProductCode": "845`",
+      "ProductSKU": "",
+      "Gender": "Women",
+      "quantity": "",
+      "RegualrPrice": "999",
+      "SalePrice": "99",
+      "Date": "2023-06-30",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "Arvind",
+      "email": "ar@gmail.com",
+      "password": "098098",
+      "phone": "9898988989",
+      "dateOfJoining": "2023-06-29",
+      "id": 3
+    },
+    {
+      "name": "Devraj",
+      "email": "dv@gmail.com",
+      "password": "dvdvdvdv",
+      "phone": "8984479549",
+      "dateOfJoining": "2023-06-29",
+      "id": 4
+    },
+    {
+      "name": "Prasad",
+      "email": "pr@gmail.com",
+      "password": "prprprprp",
+      "phone": "3458973953",
+      "dateOfJoining": "2023-06-29",
+      "id": 5
+    },
+    {
+      "name": "Rashford",
+      "email": "rashi@gmail.com",
+      "password": "rashi",
+      "phone": "3972434849",
+      "dateOfJoining": "2023-06-29",
+      "id": 6
+    }
+  ],
+  "newsletter": [
+    {
+      "email": "test@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "test1@gmail.com",
+      "id": 3
+    },
+    {
+      "email": "test3@gmail.com",
+      "id": 4
+    },
+    {
+      "email": "prasad795@gmail.com",
+      "id": 5
+    },
+    {
+      "email": "prasad795@gmail.com",
+      "id": 6
+    }
+  ]
+}

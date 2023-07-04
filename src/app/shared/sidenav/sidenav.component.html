@@ -19,16 +19,16 @@
             </mat-expansion-panel>
 
             <mat-list-item routerLinkActive="buttonColor">
-                <button routerLink="/product" mat-button><mat-icon>store</mat-icon>Product</button>
+                <button routerLink="/product/product-list" mat-button><mat-icon>store</mat-icon>Product</button>
             </mat-list-item>
             <mat-list-item routerLinkActive="buttonColor">
                 <button mat-button><mat-icon>shopping_cart</mat-icon>Orders</button>
             </mat-list-item>
             <mat-list-item routerLinkActive="buttonColor">
-                <button mat-button><mat-icon>supervisor_account</mat-icon>Users</button>
+                <button routerLink="/users" mat-button><mat-icon>supervisor_account</mat-icon>Users</button>
             </mat-list-item>
             <mat-list-item routerLinkActive="buttonColor">
-                <button mat-button><mat-icon>email</mat-icon>Newsletter</button>
+                <button routerLink="/newsletter" mat-button><mat-icon>email</mat-icon>Newsletter</button>
             </mat-list-item>
 
             <mat-expansion-panel [class.mat-elevation-z0]="true">
@@ -39,12 +39,13 @@
                     <a mat-list-item routerLink="">General</a>
                     <a mat-list-item routerLink="">Advanced settings</a>
                     <a mat-list-item routerLink="">Account Settings</a>
+                    <a mat-list-item routerLink="/banner">Fronted App Seting</a>
                 </mat-nav-list>
             </mat-expansion-panel>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-        <div style="text-align: center; min-height: 600px;">
+        <div >
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>

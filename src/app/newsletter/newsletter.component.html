@@ -1,0 +1,17 @@
+<mat-tab-group>
+    <mat-tab label="User" (click)="openDialog()" Open Dialog >
+      <ng-template matTabContent>
+        <app-users></app-users>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Publish">
+      <ng-template matTabContent>
+        <app-form></app-form>
+      </ng-template>
+    </mat-tab>
+    <!-- <mat-tab label="Readings">
+      <ng-template matTabContent>
+        <app-readings></app-readings>
+      </ng-template>
+    </mat-tab> -->
+  </mat-tab-group>

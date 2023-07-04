@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { HighchartsChartModule } from 'highcharts-angular'
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HighchartsChartModule } from 'highcharts-angular'
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MaterialModule
   ]
 })
 export class DashboardModule { }
